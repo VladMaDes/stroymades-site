@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StroyMaDes – Handyman in Sibiu</title>
+  <title>StroyMaDes</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -100,7 +100,7 @@
 </head>
 <body>
   <header>
-    <h1>StroyMaDes – Handyman in Sibiu</h1>
+    <h1>StroyMaDes</h1>
     
     <div class="contact">
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
@@ -164,9 +164,20 @@
     </div>
   </div>
 
-  <div class="footer">
+  
+  <div class="section" style="text-align: center;">
+    <h2>Order a Job / Comandă lucrare / Замовити роботу</h2>
+    <form action="https://formspree.io/f/xqkrzwvn" method="POST" style="max-width: 500px; margin: auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin: 8px 0;" /><br/>
+      <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin: 8px 0;" /><br/>
+      <textarea name="message" placeholder="What do you need?" rows="5" required style="width: 100%; padding: 12px; margin: 8px 0;"></textarea><br/>
+      <button type="submit" class="button">Send Request</button><p style="margin-top:10px;">We will contact you within 24 hours.</p>
+    </form>
+  </div>
+
+<div class="footer">
     <p>&copy; 2025 StroyMaDes Handyman Sibiu – Your future address here</p>
-       <p><em>"Quality Work. Honest Price. Every Time."</em></p>
+       <p style="color: red; text-shadow: 1px 1px 2px white; font-size: 20px;"><strong>"Quality Work. Honest Price. Every Time."</strong></p>
   </div>
 </body>
 </html>
