@@ -1,211 +1,172 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>StroyMaDes – Handyman in Sibiu</title>
-<style>
-    h3, h2, p, label {
-      color: white;
-      text-shadow: 1px 1px 2px black;
-    }
-    #pricing li {
-      font-size: 18px;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-    #pricing input {
-      font-size: 16px;
-      padding: 5px;
-      margin-left: 10px;
-    }
-    .taskrabbit-link {
-      font-family: 'Arial', sans-serif;
-      letter-spacing: 0.5px;
-      color: black;
-      text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-    
-      font-family: 'Arial', sans-serif;
-      letter-spacing: 0.5px;
-      color: black; text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-      text-shadow: none;
-    
-      font-family: 'Arial', sans-serif;
-      letter-spacing: 0.5px;
-      text-shadow: 0.5px 0.5px 1px black;
-    
-      display: block;
-      text-align: center;
-      font-size: 22px;
-      font-weight: bold;
-      color: #fff;
-      text-shadow: 1px 1px 3px black;
-      margin-top: 10px;
-    }
-    
-    h3, h2, p, label {
-      color: white;
-      text-shadow: 1px 1px 2px black;
-    }
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StroyMaDes – Handyman in Sibiu</title>
+  <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: black; text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+      color: white;
+      text-shadow: 1px 1px 2px black;
     }
-    .container {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 20px;
-      max-width: 900px;
-      margin: 40px auto;
-      border-radius: 16px;
-    }
-    h1, h2, h3 {
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 1em;
       text-align: center;
     }
-    section {
-      margin-bottom: 30px;
-    }
-    .language {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px;
-    }
-    .photo-gallery img {
-      width: 100%;
-      max-width: 400px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    .photo-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    form input, form textarea, form button {
-      width: 100%;
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      background-color: #000;
+    .button {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 14px 22px;
+      font-size: 18px;
+      font-weight: bold;
       color: white;
-      border: none;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
     }
-  
-.photo-caption {
-  display: block;
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-  margin-top: -10px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.whatsapp-button {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 10px auto;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-  .photo-gallery img {
-    max-width: 100%;
-  }
-  #pricing li {
-    font-size: 16px;
-  }
-  .whatsapp-button {
-    font-size: 16px;
-    padding: 10px 16px;
-  }
-}
-</style>
-<link href="favicon.ico" rel="icon"/></head>
+    .section {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 2em;
+    }
+    .footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 16px;
+    }
+    .lang-buttons {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .contact {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .bio {
+      font-size: 20px;
+      margin: 1.5em auto;
+      max-width: 800px;
+      text-align: center;
+    }
+    .bio a {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: square;
+      font-size: 18px;
+      padding-left: 25px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    @media (max-width: 600px) {
+      .button {
+        padding: 12px 18px;
+        font-size: 16px;
+      }
+      .bio {
+        font-size: 16px;
+      }
+      .bio a {
+        font-size: 18px;
+      }
+      ul {
+        font-size: 16px;
+      }
+    }
+  </style>
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+      document.getElementById(lang).style.display = 'block';
+    }
+    window.onload = function() {
+      showLang('en');
+    }
+  </script>
+</head>
 <body>
-<div style="text-align:center; margin-top: 10px;">🌐 Language: English | Română | Українська</div><div class="container">
-<h1>StroyMaDes – Handyman in Sibiu</h1><p style="text-align: center; font-size: 18px; margin-top: -10px;">Handyman with over 3 years of experience in New York.</p><p class="taskrabbit-link"><a href="https://www.taskrabbit.com/profile/vladyslav-m--4" style="color: black; font-size: 22px; font-weight: bold; text-decoration: none;" target="_blank">My Verified Profile on TaskRabbit</a></p>
-<div class="language">
-<a href="#en">English</a> | <a href="#ro">Română</a> | <a href="#ua">Українська</a>
-</div>
-<section id="services">
-<h2>Services / Servicii / Послуги</h2>
-<ul>
-<li>Plumbing / Instalații sanitare / Сантехніка: installation of faucets, siphons, and shower heads</li>
-<li>Electrical Work / Electricitate / Електрика: installation of chandeliers, lamps, wall lights, sockets, and switches</li>
-<li>Stretch Ceiling Maintenance / Întreținere tavane extensibile / Натяжні стелі: cleaning, ventilation installation, and chandelier installation</li>
-<li>IKEA Furniture Assembly / Asamblare mobilă IKEA / Збірка меблів IKEA</li>
-<li>General Construction Works / Lucrări generale / Загальнобудівельні роботи</li>
-</ul>
-</section>
-<section id="gallery">
-<h2>Gallery / Galerie / Галерея</h2>
-<div class="photo-gallery"><h3>Electrical / Electricitate / Електрика</h3><img alt="Electrical work" src="electrical/photo1.jpg"/><img alt="Electrical work" src="electrical/photo2.jpg"/><span class="photo-caption">Electrical work</span><h3>Plumbing / Instalații sanitare / Сантехніка</h3><img alt="Plumbing work" src="plumbing/photo1.jpg"/><img alt="Plumbing work" src="plumbing/photo2.jpg"/><span class="photo-caption">Plumbing work</span><h3>IKEA Furniture Assembly / Asamblare mobilă IKEA / Збірка меблів IKEA</h3><img alt="IKEA work" src="ikea/photo1.jpg"/><img alt="IKEA work" src="ikea/photo2.jpg"/><span class="photo-caption">IKEA work</span><h3>General Construction / Lucrări generale / Загальнобудівельні роботи</h3><img alt="Construction work" src="construction/photo1.jpg"/><img alt="Construction work" src="construction/photo2.jpg"/><span class="photo-caption">Construction work</span><h3>Stretch Ceilings / Tavane extensibile / Натяжні стелі</h3><img alt="Ceiling work" src="ceilings/photo1.jpg"/><img alt="Ceiling work" src="ceilings/photo2.jpg"/><span class="photo-caption">Ceiling work</span></div>
-</section>
-<section id="contact">
-<h2>Contact / Contact / Зв'язок</h2>
-<form>
-<input placeholder="Ім'я / Nume / Name" required="" type="text"/>
-<input placeholder="Телефон / Telefon / Phone" required="" type="tel"/>
-<textarea placeholder="Ваше повідомлення / Mesaj / Message" required=""></textarea>
-<button type="submit">Надіслати / Trimite / Send</button>
-</form>
-<a class="whatsapp-button" href="https://wa.me/18456501872" target="_blank">Message on WhatsApp</a><a class="whatsapp-button" href="tel:0669169872">Call Now</a></section>
-<section id="edit-phone">
-<h3>Edit Phone / Editați numărul / Редагувати номер телефону</h3>
-<label>Румунський номер (можна редагувати):</label>
-<input type="tel" value="+40..."/>
-<label>Viber Україна:</label>
-<input type="tel" value="+380669169872"/>
-<label>WhatsApp США:</label>
-<input type="tel" value="+18456501872"/>
-<button>Зберегти зміни / Salvează / Save</button>
-</section>
-<h3>Edit Phone / Editați numărul / Редагувати номер телефону</h3>
-<input type="tel" value="+40..."/>
-<button>Зберегти зміни / Salvează / Save</button>
-<footer><p style="text-align: center; font-family: Arial, sans-serif; font-size: 18px; color: black;">© 2025 StroyMaDes. TaskRabbit: <a href="https://www.taskrabbit.com/profile/vladyslav-m--4" style="color: black; text-decoration: none;" target="_blank">Vladyslav M.</a></p></footer>
-</div>
-<section id="upload">
-<h3>Add Photos / Adaugă fotografii / Додати фото</h3>
-<input accept="image/*" multiple="" type="file"/>
-<p>(Файли не зберігаються на сервері — лише для локального перегляду)</p>
-</section>
-<section id="pricing">
-<h2>Pricing / Prețuri / Prices</h2>
-<ul>
-<li><strong>Plumbing</strong> – <input placeholder="RON / USD" type="text"/></li>
-<li><strong>Electrical Work</strong> – <input placeholder="RON / USD" type="text"/></li>
-<li><strong>Stretch Ceiling Maintenance</strong> – <input placeholder="RON / USD" type="text"/></li>
-</ul>
-</section>
-<section id="map"><h2>Location / Locație / Локація</h2><input placeholder="Enter address here" style="width: 100%; padding: 10px; margin-bottom: 10px;" type="text"/><iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=&amp;output=embed" style="border:0;" width="100%"></iframe></section>
-<section id="email-form">
-<h2>Request a Quote / Cere ofertă / Заявка на послугу</h2>
-<form action="https://formspree.io/f/your-form-id" method="POST">
-<input name="name" placeholder="Your Name" required="" type="text"/>
-<input name="_replyto" placeholder="Your Email" required="" type="email"/>
-<textarea name="message" placeholder="Your Message" required=""></textarea>
-<button type="submit">Send</button>
-</form>
-</section>
+  <header>
+    <h1>StroyMaDes – Handyman in Sibiu</h1>
+    
+    <div class="contact">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+        <a href="https://wa.me/18456501872" class="button" style="background-color: green; border-color: white; color: white;">WhatsApp: +1 845 650 1872</a>
+        <a href="viber://chat?number=+380669169872" class="button" style="background-color: purple; border-color: lime; color: white;">Viber: +38 066 916 98 72</a>
+        <a href="tel:+40xxxxxxxxx" class="button">Romanian Phone: +40 ___ ___ ___</a>
+      </div>
+      <div style="margin-top: 1em; font-size: 18px; color: white; text-shadow: 1px 1px 2px black;">
+        📍 <strong>Your Address in Romania:</strong> (to be added)
+      </div>
+    </div>
+    
+      <a href="https://wa.me/18456501872" class="button">WhatsApp: +1 845 650 1872</a>
+      <a href="viber://chat?number=+380669169872" class="button">Viber: +38 066 916 98 72</a>
+      <a href="tel:+40xxxxxxxxx" class="button">Romanian Phone: +40 ___ ___ ___</a>
+    </div>
+    <div class="lang-buttons">
+      <button class="button" onclick="showLang('en')">English</button>
+      <button class="button" onclick="showLang('ro')">Română</button>
+      <button class="button" onclick="showLang('ua')">Українська</button>
+    </div>
+  </header>
+
+  <div class="section">
+    <div class="bio">
+      <p><strong>Experienced Handyman:</strong> Over 3 years of professional experience in New York.<br>View my 
+      <a href="https://www.taskrabbit.com/profile/vladyslav-m--4" target="_blank">TaskRabbit profile</a>.</p>
+    </div>
+
+    <div id="en" class="lang">
+      <h2>Services</h2>
+      <ul>
+        <li><strong>Plumbing:</strong> installation of faucets, siphons, and shower heads</li>
+        <li><strong>Electrical Work:</strong> installation of chandeliers, lamps, wall lights, sockets, and switches</li>
+        <li><strong>Stretch Ceiling Maintenance:</strong> cleaning, ventilation installation, and chandelier installation</li>
+        <li><strong>IKEA Furniture Assembly</strong></li>
+        <li><strong>General Construction Works</strong></li>
+      </ul>
+    </div>
+
+    <div id="ro" class="lang" style="display:none;">
+      <h2>Servicii</h2>
+      <ul>
+        <li><strong>Instalații sanitare:</strong> montaj baterii, sifoane și capete de duș</li>
+        <li><strong>Electricitate:</strong> montaj candelabre, lămpi, aplice, prize și întrerupătoare</li>
+        <li><strong>Întreținere tavane extensibile:</strong> curățare, instalare ventilație și montaj candelabre</li>
+        <li><strong>Asamblare mobilă IKEA</strong></li>
+        <li><strong>Lucrări generale</strong></li>
+      </ul>
+    </div>
+
+    <div id="ua" class="lang" style="display:none;">
+      <h2>Послуги</h2>
+      <ul>
+        <li><strong>Сантехніка:</strong> встановлення змішувачів, сифонів і душових головок</li>
+        <li><strong>Електрика:</strong> монтаж люстр, ламп, бра, розеток і вимикачів</li>
+        <li><strong>Натяжні стелі:</strong> миття, установка вентиляції, монтаж люстр</li>
+        <li><strong>Збірка меблів IKEA</strong></li>
+        <li><strong>Загальнобудівельні роботи</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 StroyMaDes Handyman Sibiu – Your future address here</p>
+       <p><em>"Quality Work. Honest Price. Every Time."</em></p>
+  </div>
 </body>
 </html>
