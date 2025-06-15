@@ -1,3 +1,127 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<!-- trimmed for brevity; this variable holds final HTML -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StroyMaDes – Handyman in Sibiu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background-dewalt.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 12px;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    .language {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .photo-gallery img {
+      max-width: 100%;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #444;
+      color: white;
+      border: none;
+    }
+    .whatsapp-button, .call-button {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 10px auto;
+      text-align: center;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      .whatsapp-button, .call-button { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>StroyMaDes – Handyman in Sibiu</h1>
+    <div class="language">
+      <a href="#ua">Українська</a> | <a href="#ro">Română</a> | <a href="#en">English</a>
+    </div>
+
+    <section id="services">
+      <h2>Послуги / Servicii / Services</h2>
+      <ul>
+        <li>Сантехніка / Instalații sanitare / Plumbing</li>
+        <li>Електрика / Electricitate / Electrical work</li>
+        <li>Ремонт і обслуговування натяжних стель / Reparații și întreținere tavane extensibile / Stretch ceiling maintenance</li>
+        <li>Збірка меблів IKEA / Asamblare mobilă IKEA / IKEA Furniture Assembly</li>
+        <li>Загальнобудівельні роботи / Lucrări generale / General construction works</li>
+      </ul>
+    </section>
+
+    <section id="photos">
+      <h2>Галерея робіт / Galerie foto / Work Gallery</h2>
+      <div class="photo-gallery">
+        <img src="taskrabbit-photo1.jpg" alt="Work sample 1">
+        <img src="taskrabbit-photo2.jpg" alt="Work sample 2">
+        <img src="taskrabbit-photo3.jpg" alt="Work sample 3">
+        <img src="taskrabbit-photo4.jpg" alt="Work sample 4">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Зв'язок / Contact / Contact</h2>
+      <form action="https://formspree.io/f/xgejzvbp" method="POST">
+        <input type="text" name="name" placeholder="Ім'я / Nume / Name" required />
+        <input type="tel" name="phone" placeholder="Телефон / Telefon / Phone" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Ваше повідомлення / Mesaj / Message"></textarea>
+        <button type="submit">Надіслати / Trimite / Send</button>
+      </form>
+      <a href="https://wa.me/18456501872" target="_blank" class="whatsapp-button">Message on WhatsApp</a>
+      <a href="tel:0669169872" class="call-button">Call Now</a>
+    </section>
+
+    <section id="edit">
+      <h3>Редагувати номер телефону / Editați numărul / Edit Phone</h3>
+      <input type="tel" value="+40..." />
+      <button>Зберегти зміни / Salvează / Save</button>
+    </section>
+
+    <footer>
+      <p style="text-align: center;">© 2025 StroyMaDes. TaskRabbit: <a href="https://www.taskrabbit.com/profile/vladyslav-m--4" target="_blank">Vladyslav M.</a></p>
+    </footer>
+  </div>
+</body>
+</html>
